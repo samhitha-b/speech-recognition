@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Arvo&display=swap');
+
+html{
+    background: #2d2d2d;
+    margin: 0;
+    height: 100%;
+}
+
+ h1 {
+    font-size: calc(2rem + 2vw);
+    font-weight: bold;
+    margin:  0.5em;
+  }
+  
+  h2 {
+    font-size: calc(1.325rem + .9vw);
+  }
+
+.text{
+    text-align: center;
+    font-family: 'Arvo', serif;
+    color: #aa68e7;
+    padding: 1em;
+    margin: 0.5em;
+}
+
+.container{
+    text-align: center;
+    padding: 2em;
+    margin: 2em;
+}
+  
+input[type=file]::file-selector-button {
+    border: 2px solid #ba8ce6;
+    padding: 0.5em 1em;
+    border-radius: 30em;
+    background-color: #ba8ce6;
+    transition: 1s;
+  }
+
+.button{
+    padding: 1em;
+    border-radius: 30em;
+    border: 2px solid #ba8ce6;
+    background-color: #ba8ce6;
+    margin: 3em;
+}
+
+.transcribedContainer{
+    margin: 5em 20em;
+}
+
+.box{
+    width: 70%;
+    height: 20%;
+    margin: 0 auto;
+
+    background: rgba(200, 141, 255, 0.11);
+    border-radius: 40px;
+}

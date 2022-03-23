@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>Speech Recognition</title>
+    <link rel="stylesheet" href="../static/styles/styles.css">
+</head>
+
+<body>
+    <header >
+        <div class="container">
+            <h1 class="text">Speech Recogniser</h1>
+        </div>
+    </header>
+    <section>
+        <div class="container box">
+            <h2 class="text">Try to transcribe an audio file</h2>
+            <form method="POST" enctype="multipart/form-data">
+                <input class="text" type="file" name="file"/> <br>
+                <input class="button" type="submit" value="Transcribe"/>
+            </form>
+        </div>
+    
+        {% if transcript != "" %}
+        <div id="transcribedContainer" class="transcribedContainer box">
+            <h2 class="text">Transcript</h2>
+            <p class="text">{{transcript}}</p>
+        </div>
+        {% endif %}
+    </section>
+</body>
+
+</html>
